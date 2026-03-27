@@ -1,0 +1,287 @@
+// Cta Style Here
+.tmp-case-studies-area{
+    .section-title-area{
+        margin-bottom: 60px;
+        @media #{$mdsm-layout} {
+            margin-bottom: 40px;
+        }
+        .pre-title{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-title{
+            text-align: center;
+        }
+    }
+    .section-inner{
+        padding-bottom: 135px;
+        position: relative;
+        z-index: 1;
+        .image-area{
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        .case-card-area{
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-white);
+            display: flex;
+            box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.07);
+            border-radius: 10px;
+            max-width: max-content;
+            width: max-content;
+            overflow: hidden;
+            .section-title-area{
+                padding: 40px;
+                margin-bottom: 0;
+                .pre-title{
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+                .section-title{
+                    text-align: left;
+                    font-size: 30px;
+                    line-height: 1.4;
+                    @media #{$mdsm-layout} {
+                        font-size: 22px;
+                    }
+                }
+                .text-btn{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &.area-2{
+        .image-area{
+            border-radius: 6px;
+            .vedio-icone .popup-video{
+                background: var(--color-primary-2);
+                &::after{
+                    background: var(--primary-100);
+                }
+            }
+        }
+        .section-inner .case-card-area{
+            border-radius: 5px;
+            .content{
+                display: flex;
+                align-items: center;
+            }
+            .pre-title{
+                background: var(--primary-100);
+                font-size: 14px;
+                padding: 0 14px;
+                height: 30px;   
+                color: var(--color-primary);
+                max-width: max-content;
+                border-radius: 4px;
+                font-family: var(--font-secondary);
+                font-weight: 400;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } 
+            .case-btn-area{
+                .case-btn{
+                    color: var(--color-heading-1);
+                }
+            }
+        }
+    }
+}
+
+.float-right {
+    position: relative;
+    min-width: 115%;
+    right: 0;
+    @media #{$large-mobile} {
+        min-width: 100%;
+    }
+    // .left-align-arrow-btn{
+    //     @media(max-width:768px){
+    //         display: none;
+    //     }
+    //     .swiper-button-next,
+    //     .swiper-button-prev{
+    //         left: -80px;
+    //         @media(max-width:1600px){
+    //             left: -10px;
+    //         }
+    //     }
+    //     .swiper-button-prev{
+    //         top: 50%;
+    //     }
+    //     .swiper-button-next{
+    //         top: 62%;
+    //         @media(max-width:991px){
+    //             top: 58%;
+    //         }
+    //     }
+    // }
+}
+.float-right2{
+    position: relative;
+    min-width: 120%;
+    right: 0;
+    @media #{$large-mobile} {
+        min-width: 100%;
+    }
+}
+.cta-bg-1{
+    padding: 115px 0 245px;
+    background: url(../images/cta/cta-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 60px;
+    border-radius: 6px;
+    height: 701px;
+    position: relative;
+    @media #{$large-mobile} {
+        height: 430px;
+    }
+    .cta-wrapper{
+    }
+    &.inner{
+        border-bottom: 5px solid var(--color-primary-2);
+    }
+}
+.cta-wrapper{
+    padding: 92px;
+    border-radius: 6px 6px 0 0;
+    transition: var(--transition);
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    &.active{
+        &::after{
+            opacity: 0;
+        }
+        &::before{
+            opacity: 1;
+        }
+        .sub-title,
+        .title{
+            color: var(--color-white);
+            svg{
+                path{
+                    fill: var(--color-white);
+                }
+            }
+        }
+        .tmp-btn{
+            background: var(--color-white);
+            color: var(--color-heading-1);
+            &:hover{
+                color: var(--color-white);
+            }
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 1;
+        transition: var(--transition);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(#FF7029, $alpha: .9);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: var(--transition);
+    }
+    .sub-title{
+        transition: var(--transition);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        span{
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+    }
+    .title{
+        max-width: 453px;
+        font-size: 26px;
+        line-height: 1.4;
+        font-weight: 600;
+        transition: var(--transition);
+    }
+    .tmp-btn{
+        transition: var(--transition);
+    }
+    .cta-shape{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &.two{
+        &::before{
+            background: rgba(#87AB42, $alpha: .9);
+        }
+        .sub-title{
+            svg{
+                path{
+                    fill: var(--color-primary-2);
+                }
+            }
+        }
+    }
+}
+
+.cta-area-start-1{
+    background-image: url(../images/cta/07.webp);
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #0000005d;
+        z-index: -1;
+    }
+    .cta-fluid-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$large-mobile} {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .title{
+            margin-bottom: 0;
+            color: var(--color-white);
+            font-weight: 700;
+            line-height: 1.25;
+            br{
+                @media #{$smlg-device} {
+                    display: none;
+                }
+            }
+        }
+    }
+}

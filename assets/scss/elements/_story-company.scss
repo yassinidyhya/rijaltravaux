@@ -1,0 +1,9 @@
+
+
+.company-histry-video-area{
+    .rounded-player-2{
+        @media #{$mdsm-layout} {
+            display: none;
+        }
+    }
+}

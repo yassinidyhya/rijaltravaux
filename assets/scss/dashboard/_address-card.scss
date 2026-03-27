@@ -1,0 +1,87 @@
+.single-address-booking-wrapper{
+    padding: 15px;
+    // background: #fffdf7;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    transition: .3s;
+    &:hover{
+        box-shadow: var(--shadow-1);
+        border: 1px solid #e5e5e500;
+        background: var(--color-white);
+    }
+    .header-booking{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i{
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                background: var(--primary-100);
+                color: var(--color-primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+            }
+            p{
+                margin-bottom: 0;
+                font-weight: 500;
+                color: var(--color-heading-1);
+            }
+        }
+        a{
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+    .body{
+        margin-top: 20px;
+        .address{
+            padding: 10px;
+            background: #f5f5f5;
+            box-shadow: 0 1px 0 hsla(0, 0%, 62%, .25);
+        }
+        .number{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f3ebeb;
+            padding: 10px;
+            color: #e91e63;
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    color: var(--color-primary);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .footer{
+        .category{
+            max-width: max-content;
+            display: inline-block;
+            margin-top: 4px;
+            margin-right: 4px;
+            font-size: 12px;
+            border-radius: 2px;
+            padding: 2px 4px;
+            color: #000;
+            background-color: #f5f5f5;
+            line-height: 1;
+        }
+    }
+}
+
+.dash-board-content-area-wrappper{
+    .product-wrapper .image-area{
+        background: transparent;
+    }
+}

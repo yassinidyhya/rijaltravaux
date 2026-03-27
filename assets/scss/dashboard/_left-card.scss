@@ -1,0 +1,58 @@
+// left-bard-bar
+.user-infor-left-sidebar-dashboard{
+    background: var(--color-white);
+    box-shadow: var(--shadow-1);
+    padding: 15px;
+    margin-top: -130px;
+    border-radius: 6px;    
+    .author-profile{
+        text-align: center;
+        .author-profile-img{
+            margin-top: 53px;
+            width: 121px;
+            height: 121px;
+            border-radius: 50%;
+            margin: auto;
+            overflow: hidden;
+            border: 5px solid #e0e0e0;
+        }
+        .name{
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 1.3;
+        }
+    }
+    .dashboard-menu-area{
+        .dashboard-mainmenu{
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    margin: 5px 0;
+                    padding: 0;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px 20px;
+                        background: #f9f9f9;
+                        border-radius: 4px;
+                        transition: .3s;
+                        font-weight: 600;
+                        font-family: var(--font-primary);
+                        &:hover{
+                            background: var(--color-primary);
+                            color: #fff;
+                        }
+                        &.active{
+                            background: var(--color-primary);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

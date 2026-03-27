@@ -1,0 +1,107 @@
+:root {
+
+    // themes color
+    --color-primary:  #FF5E14;
+    --color-primary-2:  #FF5E14;
+    --color-secondary: #FF7029;
+    --color-secondary: rgb(255, 112, 41, .20);
+    // body color
+    --color-body: #6E777D;
+    --color-body-2: #717580;
+    --color-border: #E4E4E4;
+    // title color
+    --color-heading-1: #1F242E;
+    --color-black: #000000;
+    --color-white:#fff;
+    // box shadow
+    --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
+    // color primary shade
+    --primary-100: #ffefe8;
+    --primary-200: #ffcfb9;
+    --primary-300: #ffaf8a;
+    --primary-400: #ff8e5b;
+    --primary-500: #ff6e2c;
+    --primary-600: #ff5e14;
+    --primary-700: #FF5E14;
+    --primary-900: #ff5e14;
+    // color secondary shade
+    --secondary-100: #fff1ea;
+    --secondary-200: #ffd4bf;
+    --secondary-300: #ffc6a9;
+    --secondary-400: #ffa97f;
+    --secondary-500: #ff9b69;
+    --secondary-600: #ff8d54;
+    --secondary-700: #ff7029;
+    --secondary-900: #e66525;
+    // notify Colors
+    --color-success: #3EB75E;
+    --color-danger: #FF0003;
+    --color-warning: #FF8F3C;
+    --color-info: #1BA2DB;
+    //Social icon colors
+    --color-facebook: #3B5997;
+    --color-twitter: #1BA1F2;
+    --color-youtube: #ED4141;
+    --color-linkedin: #0077B5;
+    --color-pinterest: #E60022;
+    --color-instagram: #C231A1;
+    --color-vimeo: #00ADEF;
+    --color-twitch: #6441A3;
+    --color-discord: #7289da;
+
+    // Font weight
+    --p-light: 300;
+    --p-regular: 400;
+    --p-medium: 500;
+    --p-semi-bold: 600;
+    --p-bold: 700;
+    --p-extra-bold: 800;
+    --p-black: 900;
+
+    // Font weight
+    --s-light: 300;
+    --s-regular: 400;
+    --s-medium: 500;
+    --s-semi-bold: 600;
+    --s-bold: 700;
+    --s-extra-bold: 800;
+    --s-black: 900;
+
+    //transition easing
+    --transition: all 0.4s ease;
+
+    // Font Family
+    --font-primary: "Exo", sans-serif;
+    --font-secondary: "Rubik", sans-serif;
+    --font-third: "Rouge Script", cursive;
+
+    //Fonts Size
+    --font-size-b1: 16px;
+    --font-size-b2: 16px;
+    --font-size-b3: 22px;
+
+    //Line Height
+    --line-height-b1: 26px;
+    --line-height-b2: 26px;
+    --line-height-b3: 1.7;
+
+    // Heading Font
+    --h1: 66px;
+    --h2: 44px;
+    --h3: 36px;
+    --h4: 30px;
+    --h5: 24px;
+    --h6: 20px;
+}
+
+// Layouts Variation
+$smlg-device: 'only screen and (max-width: 1199px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$laptop-sm: 'only screen and (max-width: 1399px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$mdsm-layout:'only screen and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 576px)';
+$small-mobile: 'only screen and (max-width: 479px)';

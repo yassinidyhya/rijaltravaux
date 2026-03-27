@@ -1,0 +1,217 @@
+.box-dashboard{
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: var(--shadow-1);
+}
+.box-dashboard-dashboard{
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: var(--shadow-1);
+    margin-bottom: 20px;
+    @media #{$large-mobile} {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.single-card-dashboard{
+    &.account-info{
+        .title{
+            margin-bottom: 0;
+            font-size: 24px;
+            line-height: 1.3;
+            @media #{$large-mobile} {
+                font-size: 18px;
+            }
+            &.with-border-bottom{
+                margin-bottom: 24px;
+                font-size: 20px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #e6e3f14f;
+            }
+        }
+    }
+}
+
+.dash-board-content-area-wrappper{
+    .single-card-dashboard{
+        .single-contact-information{
+            .profile-info{
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+        .title-top-primary{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i{
+                color: var(--color-primary);
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                background: var(--primary-100);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.edit-profile-picture-area{
+    .upload-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #fff;
+      @media #{$large-mobile} {
+        flex-wrap: wrap;
+      }
+    }
+
+    .image-preview {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: #fafafa;
+      position: relative;
+    }
+
+    .image-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .upload-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .upload-btn:hover {
+      background: #0056b3;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+}
+.fs-36{
+    font-size: 36px;
+    line-height: 1.3;
+}
+.fs-24{
+    font-size: 24px;
+    line-height: 1.3;
+}
+.fs-20{
+    font-size: 20px;
+    line-height: 1.3;
+}
+.edit-account-information{
+    margin-top: 30px;
+    .address-type-title{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .input-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+        }
+        .single-input{
+            width: 100%;
+            label{
+                margin-bottom: 10px;
+                color: var(--color-heading-1);
+            }
+        }
+        input{
+            height: 45px;
+            border: 1px solid var(--color-border);
+            border-radius: 3px;
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+        select{
+            height: 45px;
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            color: var(--color-body);
+            text-align: left;
+            font-size: 16px;
+            padding: 7px 12px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    button{
+        border: none;
+    }
+}
+
+
+.invers-table {
+    border: 0 none;
+    thead{
+        tr{
+            th{
+                background: var(--primary-100);
+                padding: 10px 20px;
+                color: var(--color-heading-1);
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                border: 0 none;
+                padding: 10px 20px;
+            }
+            th{
+                padding: 10px 20px;
+                font-weight: 400;
+            }
+            &:nth-child(even){
+                th,
+                td{
+                    background: rgba(207, 207, 207, .24);
+                }
+            }
+        }
+    }
+}
+
+.table {
+    color: var(--color-body);
+    &.invers-table thead tr th{
+        text-transform: capitalize;
+    }
+}
+
+
+
+
+
+

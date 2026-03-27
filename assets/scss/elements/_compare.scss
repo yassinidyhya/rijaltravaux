@@ -1,0 +1,101 @@
+
+
+.invers-compare-table{
+    tbody tr {
+        border-width: 0;
+        display: flex;
+    }
+    tbody{
+        .invers-product-feature-name {
+            color: var(--color-heading-1);
+            font-family: var(--font-primary);
+            font-size: var(--font-size-b1);
+            line-height: var(--line-height-b1);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        tr{
+            td {
+                border-width: 0 0 1px 0;
+                flex: 0 0 20%;
+                padding: 12px 5px;
+                min-width: 254px;
+            }
+        }
+    }
+    .invers-compare-values {
+        min-width: 224px;
+        *{
+            text-decoration: none;
+        }
+        .invers-product-item-category{
+            color: var(--color-primary);
+            font-family: var(--font-primary);
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .invers-product-item-title{
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        .invers-card-rating {
+            display: flex;
+            gap: 8px;
+        }
+    }
+    .invers-product-price {
+        color: var(--color-heading-1);
+        font-family: var(--font-primary);
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 600;
+    }
+    .invers-compare-item-wrapper{
+        position: relative;
+        .invers-product-remove-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            width: 32px;
+            background: #F3F3F3;
+            color: var(--color-heading-1);
+            border: none;
+            border-radius: 50%;
+            font-size: 14px;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            z-index: 1;
+            transition: var(--transition);
+        }
+        .invers-product-item-img{
+            border-radius: 6px;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.invers-scrollable-content{
+    overflow: auto;
+}
+
+.invers-rating-icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    line-height: .9;
+    li{
+        margin: 0;
+        i{
+            color: #FCC418;
+        }
+    }
+}
