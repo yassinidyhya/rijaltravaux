@@ -33,9 +33,9 @@
         mapTitle +
         "</a></div>" +
         '<ul class="list-info">' +
-        '<li><span class="fa-solid fa-location-crosshairs"></span><span class="text-variant-1"></span><span class="fw-6">USA, New York 1224</span></li>' +
-        '<li><span class="fa-solid fa-phone"></span><span class="text-variant-1">Phone:</span><span class="fw-6">+ 66 21 35 65 48</span></li>' +
-        '<li><span class="fa-solid fa-envelope"></span><span class="text-variant-1">Email:</span><span class="fw-6">themespark11@gmail.com</span></li>' +
+        '<li><span class="fa-solid fa-location-crosshairs"></span><span class="text-variant-1"></span><span class="fw-6">Lot 707 N°790 - Laayoune, Maroc</span></li>' +
+        '<li><span class="fa-solid fa-phone"></span><span class="text-variant-1">Téléphone:</span><span class="fw-6">+212528997940</span></li>' +
+        '<li><span class="fa-solid fa-envelope"></span><span class="text-variant-1">Email:</span><span class="fw-6">contact@rijaltravaux.ma</span></li>' +
         "</ul>"
       );
     }
